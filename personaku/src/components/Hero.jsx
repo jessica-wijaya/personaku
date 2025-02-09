@@ -7,20 +7,20 @@ import unimugo from '../assets/unimugo.png'
 
 const Hero = () => {
   return (
-    <div className="relative ;eft w-full max-w-[1440px] h-[591px] mx-auto px-10 flex flex-col justify-center">
+    <div className="absolute w-full max-w-[1440px] h-[591px] flex-col">
       {/* Headline */}
-      <h1 className="hidden md:flex w-full max-w-[649px] text-black text-5xl font-bold poppins-bold leading-[65px] ml-10">
+      <h1 className="hidden md:flex w-full max-w-[649px] text-black text-5xl font-bold poppins-bold leading-[65px] ml-[131px] mt-[93px]">
         Membangun jalinan <br /> komunitas penelitian
       </h1>
 
       {/* Subheading */}
-      <h2 className="hidden md:flex max-w-[1055px] mt-6 text-[#828282] text-2xl font-medium leading-[50px] ml-10">
+      <h2 className="hidden md:flex absolute w-[1055px] top-[258px] left-[131px] text-[#828282] text-2xl poppins-medium leading-[50px]">
         Selamat datang di jaringan komunitas akademik, tempat untuk mempererat<br />
         kerjasama dalam menjalankan Tri Dharma Perguruan Tinggi di seluruh Indonesia.
       </h2>
 
       {/* Logos Section */}
-      <div className="w-[412px] h-[60px] left-[953px] top-[413px] absolute justify-start items-end gap-6 inline-flex">
+      <div className="hidden md:flex w-[359px] h-[60px] gap-6">
         <img className="w-[85.47px] h-20" src={umy} alt="umy"/>
         <img className="w-20 h-20" src={unimugo} alt="unimugo"/>
         <img className="w-[94.49px] h-20" src={stikes} alt="stikes"/>
@@ -29,10 +29,10 @@ const Hero = () => {
 
         {/* Mobile Headline */}
         <div className="md:hidden">
-            <h1 className="w-full max-w-[649px] text-black text-5xl font-bold poppins-bold leading-[65px]">
+            <h1 className="w-full max-w-[649px] text-black text-5xl font-bold poppins-bold leading-[65px] mt-[83px] ml-[5px]">
             Membangun jalinan <br /> komunitas penelitian
             </h1>
-            <h2 className="max-w-[1055px] mt-6 text-[#828282] text-lg font-medium leading-[50px]">
+            <h2 className="max-w-[1055px] mt-6 ml-[5px] text-[#828282] text-lg font-medium leading-[50px]">
             Selamat datang di jaringan komunitas akademik, tempat untuk mempererat 
             kerjasama dalam menjalankan Tri Dharma Perguruan Tinggi di seluruh Indonesia.
             </h2>
