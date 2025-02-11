@@ -1,49 +1,41 @@
 import React from 'react';
-import stikes from '../assets/stikes.png'
-import ukws from '../assets/ukws.png'
-import umy from '../assets/umy.png'
-import unimugo from '../assets/unimugo.png'
-
+import stikes from '../assets/stikes.png';
+import ukws from '../assets/ukws.png';
+import umy from '../assets/umy.png';
+import unimugo from '../assets/unimugo.png';
+import Button from './Button';
 
 const Hero = () => {
   return (
-    <div className="absolute w-full max-w-[1440px] h-[591px] flex-col">
-      {/* Headline */}
-      <h1 className="hidden md:flex w-full max-w-[649px] text-black text-5xl font-bold poppins-bold leading-[65px] ml-[131px] mt-[93px]">
-        Membangun jalinan <br /> komunitas penelitian
-      </h1>
+    <section className="w-full max-w-[1440px] mx-[auto] px-5 md:px-10">
+      {/* Headline & Subheading */}
+      <div className="max-w-[1055px] mt-10 md:mt-[93px] text-center md:text-left">
+        <h1 className="poppins-bold text-3xl md:text-5xl leading-tight">
+          Membangun jalinan <br /> komunitas penelitian
+        </h1>
+        <h2 className="poppins-medium text-[#828282] md:text-2xl mt-[44px]">
+          Selamat datang di jaringan komunitas akademik, tempat untuk mempererat <br />
+          kerjasama dalam menjalankan Tri Dharma Perguruan Tinggi di seluruh Indonesia.
+        </h2>
+      </div>
 
-      {/* Subheading */}
-      <h2 className="hidden md:flex absolute w-[1055px] top-[258px] left-[131px] text-[#828282] text-2xl poppins-medium leading-[50px]">
-        Selamat datang di jaringan komunitas akademik, tempat untuk mempererat<br />
-        kerjasama dalam menjalankan Tri Dharma Perguruan Tinggi di seluruh Indonesia.
-      </h2>
-
-      {/* Logos Section */}
-      <div className="hidden md:flex w-[359px] h-[60px] gap-6">
-        <img className="w-[85.47px] h-20" src={umy} alt="umy"/>
-        <img className="w-20 h-20" src={unimugo} alt="unimugo"/>
-        <img className="w-[94.49px] h-20" src={stikes} alt="stikes"/>
-        <img className="w-20 h-20" src={ukws} alt="ukws"/>
+      {/* Buttons & Logos in a Row */}
+      <div className="mt-[55px] flex flex-col md:flex-row items-center justify-between">
+      {/* Buttons Section */}
+        <div className="flex flex-col md:flex-row gap-4">
+          <Button variant="primary" size="hero">Coba Gratis</Button>
+          <Button variant="secondary" size="hero">Contact Us</Button>
         </div>
 
-        {/* Mobile Headline */}
-        <div className="md:hidden">
-            <h1 className="w-full max-w-[649px] text-black text-5xl font-bold poppins-bold leading-[65px] mt-[83px] ml-[5px]">
-            Membangun jalinan <br /> komunitas penelitian
-            </h1>
-            <h2 className="max-w-[1055px] mt-6 ml-[5px] text-[#828282] text-lg font-medium leading-[50px]">
-            Selamat datang di jaringan komunitas akademik, tempat untuk mempererat 
-            kerjasama dalam menjalankan Tri Dharma Perguruan Tinggi di seluruh Indonesia.
-            </h2>
-            <div className="mt-10 flex items-center gap-6 ml-10">
-                <img className="w-[85px] h-[80px]" src={umy} alt="umy" />
-                <img className="w-[80px] h-[80px]" src={unimugo} alt="unimugo" />
-                <img className="w-[94px] h-[80px]" src={stikes} alt="stikes" />
-                <img className="w-[80px] h-[80px]" src={ukws} alt="ukws" />
-            </div>
+        {/* Logos Section */}
+        <div className="flex flex-wrap justify-center md:justify-end gap-6 mt-6 md:mt-0">
+          <img className="w-[85px]" src={umy} alt="umy" />
+          <img className="w-[80px]" src={unimugo} alt="unimugo" />
+          <img className="w-[94px]" src={stikes} alt="stikes" />
+          <img className="w-[80px]" src={ukws} alt="ukws" />
         </div>
-    </div>
+      </div>
+    </section>
   );
 };
 
