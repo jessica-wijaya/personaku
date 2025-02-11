@@ -7,7 +7,7 @@ import Button from './Button';
 
 const Hero = () => {
   return (
-    <section className="w-full max-w-[1440px] mx-[auto] px-5 md:px-10">
+    <section className="w-full max-w-[1440px] h-[500px] mx-[auto] px-5 md:px-10">
       {/* Headline & Subheading */}
       <div className="max-w-[1055px] mt-10 md:mt-[93px] text-center md:text-left">
         <h1 className="poppins-bold text-3xl md:text-5xl leading-tight">
