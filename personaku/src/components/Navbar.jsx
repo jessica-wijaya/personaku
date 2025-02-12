@@ -37,7 +37,7 @@ const Navbar = () => {
         }`}
       >
         <img className="h-[60px] p-5" src={logo} alt="logo" />
-        <ul className="space-y-4 text-lg pl-5">
+        <ul className="space-y-5 text-lg pl-5">
           <li className="hover:text-[#1658F9] cursor-pointer transition duration-300">Home</li>
           <li className="hover:text-[#1658F9] cursor-pointer transition duration-300">Harga</li>
           <li className="hover:text-[#1658F9] cursor-pointer transition duration-300">Demo</li>

@@ -19,7 +19,6 @@ const Hero = () => {
         </h2>
       </div>
 
-      {/* Buttons & Logos in a Row */}
       <div className="mt-[55px] flex flex-col md:flex-row items-center justify-between">
       {/* Buttons Section */}
         <div className="flex flex-col md:flex-row gap-4">
