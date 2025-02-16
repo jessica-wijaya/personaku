@@ -12,10 +12,7 @@ const Manfaat = () => {
                         MANFAAT KAMI
                     </h1>
                     <h2 className="poppins-semibold text-[32px] mt-2">
-                        Manfaat komunitas akademik
-                    </h2>
-                    <h2 className="poppins-semibold text-[32px] text-[#1658f9]">
-                        tanpa batas
+                        Manfaat komunitas akademik <span className="text-[#1658f9]">tanpa batas</span>
                     </h2>
                     {/* Rectangles */}
                     <div className="w-full md:w-[556px] grid grid-cols-1 md:grid-cols-2 md:gap-[45px] gap-y-[20px] items-center mt-8">

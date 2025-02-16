@@ -14,7 +14,7 @@ const Hero = () => {
         <h1 className="poppins-bold text-3xl md:text-5xl leading-tight">
           Membangun jalinan <br /> komunitas penelitian
         </h1>
-        <h2 className="poppins-medium text-[#828282] md:text-2xl mt-[44px]">
+        <h2 className="poppins-regular text-[#828282] md:text-2xl mt-[44px]">
           Selamat datang di jaringan komunitas akademik, tempat untuk mempererat <br />
           kerjasama dalam menjalankan Tri Dharma Perguruan Tinggi di seluruh Indonesia.
         </h2>
