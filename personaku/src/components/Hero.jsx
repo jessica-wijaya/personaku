@@ -4,6 +4,7 @@ import ukws from '../assets/ukws.png';
 import umy from '../assets/umy.png';
 import unimugo from '../assets/unimugo.png';
 import Button from './Button';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Hero = () => {
   return (
@@ -20,9 +21,12 @@ const Hero = () => {
       </div>
 
       <div className="mt-[55px] flex flex-col md:flex-row items-center justify-between">
-      {/* Buttons Section */}
+        {/* Buttons Section */}
         <div className="flex flex-col md:flex-row gap-4">
-          <Button variant="primary" size="hero">Coba Gratis</Button>
+          <Button variant="primary" size="hero" className="gap-2">
+            Coba Gratis
+            <AiOutlineArrowRight />
+          </Button>
           <Button variant="secondary" size="hero">Contact Us</Button>
         </div>
 
