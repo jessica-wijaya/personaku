@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='w-full border-t border-t-[#828282]'>
             <div className="flex flex-col items-center gap-4 my-5">
-                <ul className="md:flex space-x-6">
+                <ul className="flex space-x-6">
                     <li className="hover:text-[#1658F9] cursor-pointer transition duration-300">Kontak</li>
                     <li className="hover:text-[#1658F9] cursor-pointer transition duration-300">FAQ</li>
                     <li className="hover:text-[rgb(22,88,249)] cursor-pointer transition duration-300">Demo</li>

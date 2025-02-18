@@ -1,98 +1,112 @@
-import React from 'react';
+import React from 'react'
 import Button from './Button';
+import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
 const Harga = () => {
   return (
-    <section className="relative w-full bg-[#fafbfc]">
-      {/* Header */}
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-[131px] pt-[50px] md:pt-[131px] text-center">
-        <h1 className="poppins-light text-[#828282] text-[18px] leading-normal">
-          HARGA
-        </h1>
-        <h1 className="poppins-semibold text-[32px]">
-          Pilih Paket Mu!
-        </h1>
-      </div>
-
-      {/* Cards */}
-      <div className="w-full py-4 px-4 sm:px-6 md:px-8 lg:px-[131px]">
-        {/* 
-          We remove the fixed max width on medium screens so that iPads 
-          can display a wider layout. The max width is only applied at xl (≥1280px).
-        */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-[62px] items-center xl:max-w-[1440px] xl:mx-auto">
-          
-          {/* Card 1 */}
-          <div className="group relative w-full md:max-w-[350px] h-auto md:h-[425px] bg-white 
-                          rounded-[14px] border border-[#828282] shadow-xl hover:scale-105 duration-300 
-                          px-6 pb-6">
-           
-            
-          </div>
-
-          {/* Card 2 */}
-          <div className="group relative w-full lg:max-w-[350px] h-auto lg:h-[575px] bg-white 
-                          rounded-[14px] border border-[#828282] shadow-xl hover:scale-105 duration-300 
-                          px-6 pb-6">
-            
-            <div className="absolute top-4 right-4">
-              <div className="w-[105px] h-[31px] bg-[#bfd2ff] rounded-xl text-xs text-[#1658f9] 
-                              flex justify-center items-center">
-                • Paling Laris
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-2.5 py-6 md:py-[89px]">
-              <p className="poppins-medium text-2xl group-hover:text-[#1658f9]">
-                Standard
-              </p>
-              <p className="text-[#828282] text-[15px] group-hover:text-[#1658f9]">
-                Untuk pemula ambisius
-              </p>
-              <div className="w-[303px] h-8 relative mt-[46px] flex flex-row gap-4">
-                <p className="text-4xl">Rp 50.000</p>
-                <p className="text-[10px] text-[#828282]">
-                  per user/month <br />
-                  billed yearly
-                </p>
-              </div>
-              <Button variant="primary" size="pricing" className="mt-[30px]">
-                Mulai Sekarang
-              </Button>
-              <div className="flex flex-col mt-[26px] gap-[13px]">
-                <p className="text-[10px]">Semua yang ada di basic, ditambah:</p>
-                <div className="flex gap-2.5">
-                  <AiOutlineCheckCircle className="w-[24px] h-[24px] text-[#bfd2ff]" />
-                  <p>Fitur 1</p>
-                </div>
-                <div className="flex gap-2.5">
-                  <AiOutlineCheckCircle className="w-[24px] h-[24px] text-[#bfd2ff]" />
-                  <p>Fitur 2</p>
-                </div>
-                <div className="flex gap-2.5">
-                  <AiOutlineCheckCircle className="w-[24px] h-[24px] text-[#bfd2ff]" />
-                  <p>Fitur 3</p>
-                </div>
-                <div className="flex gap-2.5">
-                  <AiOutlineCheckCircle className="w-[24px] h-[24px] text-[#bfd2ff]" />
-                  <p>Fitur 4</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="group relative w-full md:max-w-[350px] h-auto md:h-[425px] bg-white 
-                          rounded-[14px] border border-[#828282] shadow-xl hover:scale-105 duration-300 
-                          px-6 pb-6">
-            
-             
-          </div>
+    <div className='w-full py-[100px] px-4 bg-white'>
+        <div className='flex flex-col items-center justify-center'>
+            <p className='text-[#828282] text-lg'>HARGA</p>
+            <h2 className='text-[32px] text-black poppins-semibold'>Pilih Paket Mu!</h2>
         </div>
-      </div>
-    </section>
-  );
-};
+        <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 mt-1.5'>
+          {/* Card 1 */}
+            <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
+                <h2 className='text-2xl item poppins-medium px-6 md:pt-[89px]'>Demo</h2>
+                <p className='text-[15px] text-[#828282] poppins-medium px-6'>Untuk pemula ambisius</p>
+                <p className='text-3xl poppins-medium mx-6 mt-[46px]'>Rp 0</p>
+                <Button variant='secondary' className='lg:w-[300px] my-6 mx-auto px-6 py-3'>Mulai Sekarang</Button>
+                <p className='mx-8 poppins-medium text-[#828282] text-[10px]'>Semua yang ada di basic, ditambah:</p>
+                <div className='m-[13px] mx-8'>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 1</p>
+                    </div>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 2</p>
+                    </div>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 3</p>
+                    </div>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 4</p>
+                    </div>
+                </div>
+                <button className='text-[#1658F9] cursor-pointer'>Lihat detail spesifikasi →</button>
+            </div>
 
-export default Harga;
+        {/* Card 2 */}
+            <div className='w-full shadow-xl flex flex-col items-center md:items-start p-4 my-8 md:my-0 rounded-lg hover:scale-105 duration-300 relative'>
+                <div className='absolute top-10 right-4 z-100'>
+                    <p className="w-[105px] h-[31px] bg-[#bfd2ff] rounded-xl text-xs text-[#1658f9] 
+                                    flex justify-center items-center">
+                    • Paling Laris
+                    </p>     
+                </div>              
+                <h2 className='text-2xl item poppins-medium px-6 md:pt-[89px]'>Standard</h2>
+                <p className='text-[15px] text-[#828282] poppins-medium px-6'>Untuk pemula ambisius</p>
+                <div className='flex items-center mt-[46px]'>
+                    <p className='text-3xl poppins-medium mx-6'>Rp 50.000</p>
+                    <p className='text-[10px] text-[#828282] poppins-medium'>per user/month<br/>billed yearly</p>
+                </div>
+                <Button variant='primary' className='lg:w-[300px] my-6 mx-auto px-6 py-3'>Mulai Sekarang</Button>
+                <p className='mx-8 poppins-medium text-[#828282] text-[10px]'>Semua yang ada di basic, ditambah:</p>
+                <div className='m-[13px] mx-8'>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 1</p>
+                    </div>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 2</p>
+                    </div>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 3</p>
+                    </div>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 4</p>
+                    </div>
+                </div>
+                <button className='text-[#1658F9] my-auto mx-auto cursor-pointer'>Lihat detail spesifikasi →</button>
+            </div>
+            
+
+            {/* Card 3 */}
+            <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
+            <h2 className='text-2xl item poppins-medium px-6 md:pt-[89px]'>Mantab</h2>
+                <p className='text-[15px] text-[#828282] poppins-medium px-6'>Untuk pemula ambisius</p>
+                    <p className='text-3xl poppins-medium mx-6 mt-[46px]'>Rp 70.000</p>
+                    <Button variant='secondary' className='lg:w-[300px] my-6 mx-auto px-6 py-3'>Mulai Sekarang</Button>
+                    <p className='mx-8 poppins-medium text-[#828282] text-[10px]'>Semua yang ada di basic, ditambah:</p>
+                <div className='m-[13px] mx-8'>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 1</p>
+                    </div>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 2</p>
+                    </div>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 3</p>
+                    </div>
+                    <div className='flex items-center gap-[10px]'>
+                        <AiOutlineCheckCircle className='w-6 h-6 text-[#bfd2ff]'/>
+                        <p className=''>Fitur 4</p>
+                    </div>
+                </div>
+                <button className='text-[#1658F9] cursor-pointer'>Lihat detail spesifikasi →</button>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Harga

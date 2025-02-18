@@ -7,6 +7,8 @@ import Manfaat from './components/Manfaat'
 import Demo from './components/Demo'
 import Harga from './components/Harga'
 import Footer from './components/Footer'
+import Testimonial from './components/Testimonial'
+import Ending from './components/Ending'
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
       <Features />
       <Manfaat />
       <Harga />
+      <Testimonial />
+      <Ending />
       <Footer />
     </div>
   )
