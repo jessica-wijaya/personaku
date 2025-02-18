@@ -6,6 +6,7 @@ import unimugo from '../assets/unimugo.png';
 import Button from './Button';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
+
 const Hero = () => {
   return (
     <section className="w-full max-w-[1440px] h-[500px] mx-[auto] px-5 md:px-10">
@@ -31,7 +32,7 @@ const Hero = () => {
         </div>
 
         {/* Logos Section */}
-        <div className="flex flex-wrap justify-center md:justify-end gap-6 mt-6 md:mt-0">
+        <div className="flex flex-wrap justify-center mx-auto md:justify-center gap-6 mt-6 md:mt-0">
           <img className="w-[85px]" src={umy} alt="umy" />
           <img className="w-[80px]" src={unimugo} alt="unimugo" />
           <img className="w-[94px]" src={stikes} alt="stikes" />

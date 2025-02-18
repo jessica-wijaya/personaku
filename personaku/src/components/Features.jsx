@@ -1,6 +1,9 @@
 import React from 'react';
 import Button from './Button';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { AiOutlineGlobal } from "react-icons/ai";
+import { AiOutlineUsergroupAdd } from "react-icons/ai";
+import { AiOutlineFund } from "react-icons/ai";
 
 const Features = () => {
   return (
@@ -26,8 +29,8 @@ const Features = () => {
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[62px] items-center">
           {/* Card 1 */}
           <div className="group relative w-full md:max-w-[350px] h-full md:h-[425px] bg-white rounded-[14px] border border-[#828282] shadow-xl hover:scale-105 duration-300 px-6 pb-6">
-            {/* Top content */}
-            <div className="flex flex-col gap-2.5 py-6 md:py-[157px]">
+            <AiOutlineFund className='w-[45px] h-auto pt-5 group-hover:text-[#1658f9]'/>
+            <div className="flex flex-col gap-2.5 py-6 lg:py-20">
               <p className="poppins-medium text-[16px] group-hover:text-[#1658f9]">
                 Template Menarik
               </p>
@@ -36,14 +39,15 @@ const Features = () => {
               </p>
             </div>
             {/* Button positioned at the bottom (28px from bottom) on desktop */}
-            <button className="w-[45px] h-[45px] rounded-full border border-[#828282] flex items-center justify-center cursor-pointer group-hover:text-[#1658f9] hover:bg-[#1658f9] hover:text-white duration-300
+            <button className="w-[30px] lg:w-[45px] h-[30px] lg:h-[45px] rounded-full border border-[#828282] flex items-center justify-center cursor-pointer group-hover:text-[#1658f9] hover:bg-[#1658f9] hover:text-white duration-300
                                md:absolute md:bottom-[28px] md:left-[38px]">
               <AiOutlineArrowRight className="rotate-[315deg] text-current" />
             </button>
           </div>
           {/* Card 2 */}
           <div className="group relative w-full md:max-w-[350px] h-full md:h-[425px] bg-white rounded-[14px] border border-[#828282] shadow-xl hover:scale-105 duration-300 px-6 pb-6">
-            <div className="flex flex-col gap-2.5 py-6 md:py-[157px]">
+            <AiOutlineUsergroupAdd className='w-[45px] h-auto pt-5 group-hover:text-[#1658f9]'/>
+            <div className="flex flex-col gap-2.5 py-6 lg:py-20">
               <p className="poppins-medium text-[16px] group-hover:text-[#1658f9]">
                 Template Menarik
               </p>
@@ -51,14 +55,15 @@ const Features = () => {
                 Pilih dari berbagai template portofolio yang elegan dan responsif sesuai dengan gaya dan kebutuhan Anda.
               </p>
             </div>
-            <button className="w-[45px] h-[45px] rounded-full border border-[#828282] flex items-center justify-center cursor-pointer group-hover:text-[#1658f9] hover:bg-[#1658f9] hover:text-white duration-300
+            <button className="w-[30px] lg:w-[45px] h-[30px] lg:h-[45px] rounded-full border border-[#828282] flex items-center justify-center cursor-pointer group-hover:text-[#1658f9] hover:bg-[#1658f9] hover:text-white duration-300
                                md:absolute md:bottom-[28px] md:left-[38px]">
               <AiOutlineArrowRight className="rotate-[315deg] text-current" />
             </button>
           </div>
           {/* Card 3 */}
           <div className="group relative w-full md:max-w-[350px] h-full md:h-[425px] bg-white rounded-[14px] border border-[#828282] shadow-xl hover:scale-105 duration-300 px-6 pb-6">
-            <div className="flex flex-col gap-2.5 py-6 md:py-[157px]">
+          <AiOutlineGlobal className='w-[45px] h-auto pt-5 group-hover:text-[#1658f9]'/>
+            <div className="flex flex-col gap-2.5 py-6 lg:py-20">
               <p className="poppins-medium text-[16px] group-hover:text-[#1658f9]">
                 Template Menarik
               </p>
@@ -66,7 +71,7 @@ const Features = () => {
                 Pilih dari berbagai template portofolio yang elegan dan responsif sesuai dengan gaya dan kebutuhan Anda.
               </p>
             </div>
-            <button className="w-[45px] h-[45px] rounded-full border border-[#828282] flex items-center justify-center cursor-pointer group-hover:text-[#1658f9] hover:bg-[#1658f9] hover:text-white duration-300
+            <button className="w-[30px] lg:w-[45px] h-[30px] lg:h-[45px] rounded-full border border-[#828282] flex items-center justify-center cursor-pointer group-hover:text-[#1658f9] hover:bg-[#1658f9] hover:text-white duration-300
                                md:absolute md:bottom-[28px] md:left-[38px]">
               <AiOutlineArrowRight className="rotate-[315deg] text-current" />
             </button>

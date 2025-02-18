@@ -21,6 +21,7 @@ const ButtonComponent = styled.button`
         props.size === "navbar" ? "82px" :
         props.size === "hero" ? "174px" :
         props.size === "lg" ? "230px" :
+        props.size === "pricing" ? "303px" :
         "174px"};  /* Default to 'md' size */
 
     height: ${props => 
