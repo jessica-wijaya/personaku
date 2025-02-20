@@ -7,7 +7,7 @@ import { AiOutlineFund } from "react-icons/ai";
 
 const Features = () => {
   return (
-    <section className="relative w-full md:h-[828px] bg-[#fafbfc]">
+    <div id="fitur" className="relative w-full md:h-[828px] bg-[#fafbfc]">
       {/* Header */}
       <div className="w-full px-5 md:pl-[128px] md:pr-[131px] pt-[50px] md:pt-[131px] text-center md:text-left">
         <h1 className="poppins-light text-[#828282] text-[18px] leading-normal">
@@ -78,7 +78,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

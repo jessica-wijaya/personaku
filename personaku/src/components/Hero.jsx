@@ -9,7 +9,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Hero = () => {
   return (
-    <section className="w-full max-w-[1440px] h-[500px] mx-[auto] px-5 md:px-10">
+    <div id="hero" className="w-full max-w-[1440px] h-[500px] mx-[auto] px-5 md:px-10">
       {/* Headline & Subheading */}
       <div className="max-w-[1055px] mt-10 md:mt-[93px] text-center md:text-left">
         <h1 className="poppins-bold text-3xl md:text-5xl leading-tight">
@@ -32,14 +32,14 @@ const Hero = () => {
         </div>
 
         {/* Logos Section */}
-        <div className="flex flex-wrap justify-center mx-auto md:justify-center gap-6 mt-6 md:mt-0">
-          <img className="w-[85px]" src={umy} alt="umy" />
-          <img className="w-[80px]" src={unimugo} alt="unimugo" />
-          <img className="w-[94px]" src={stikes} alt="stikes" />
-          <img className="w-[80px]" src={ukws} alt="ukws" />
+        <div className="flex flex-wrap justify-center md:justify-center gap-6 mt-6 md:mt-0">
+          <img className="w-[60px] lg:w-[85px] h-auto" src={umy} alt="umy" />
+          <img className="w-[60px] lg:w-[80px] h-auto" src={unimugo} alt="unimugo" />
+          <img className="w-[75px] lg:w-[94px] h-auto" src={stikes} alt="stikes" />
+          <img className="w-[60px] lg:w-[80px] h-auto" src={ukws} alt="ukws" />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

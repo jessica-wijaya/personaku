@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import logo from '../assets/logo.png';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Button from './Button';
@@ -6,20 +7,15 @@ import Button from './Button';
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
-  // Track the current active link (use whichever initial value makes sense).
-  const [activeLink, setActiveLink] = useState('#home');
-
+  // Handle the mobile menu toggle
   const handleNav = () => {
     setNav(!nav);
   };
 
-  const menuItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Harga', href: '#harga' },
-    { label: 'Demo', href: '#demo' },
-    { label: 'Testimoni', href: '#testimoni' },
-    { label: 'FAQ', href: '#faq' },
-  ];
+  // Close the mobile menu when a menu item is clicked
+  const handleMenuItemClick = () => {
+    setNav(false);
+  };
 
   return (
     <nav className="flex items-center justify-between h-[87px] px-5 md:px-10 border-b border-[#828282]">
@@ -32,19 +28,21 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-6">
-        {menuItems.map((item) => (
-          <li
-            key={item.href}
-            className={`
-              cursor-pointer duration-300
-              ${activeLink === item.href ? 'text-[#1658F9]' : 'text-black'}
-              hover:text-[#1658F9]
-            `}
-            onClick={() => setActiveLink(item.href)}
-          >
-            <a href={item.href}>{item.label}</a>
-          </li>
-        ))}
+        <li className='cursor-pointer hover:text-[#1658F9]'>
+          <Link to="/" smooth={true} duration={500} onClick={handleMenuItemClick}>Home</Link>  {/* Close menu on click */}
+        </li>
+        <li className='cursor-pointer hover:text-[#1658F9]'>
+          <Link to="harga" smooth={true} duration={500} onClick={handleMenuItemClick}>Harga</Link>
+        </li>
+        <li className='cursor-pointer hover:text-[#1658F9]'>
+          <Link to="demo" smooth={true} duration={500} onClick={handleMenuItemClick}>Demo</Link>
+        </li>
+        <li className='cursor-pointer hover:text-[#1658F9]'>
+          <Link to="testimoni" smooth={true} duration={500} onClick={handleMenuItemClick}>Testimoni</Link>
+        </li>
+        <li className='cursor-pointer hover:text-[#1658F9]'>
+          <Link to="faq" smooth={true} duration={500} onClick={handleMenuItemClick}>FAQ</Link>  {/* Close menu on click */}
+        </li>
       </ul>
 
       {/* Mobile Menu Icon */}
@@ -60,21 +58,23 @@ const Navbar = () => {
       >
         <img className="h-[60px] p-5" src={logo} alt="logo" />
         <ul className="space-y-5 text-lg pl-5 my-4">
-          {menuItems.map((item) => (
-            <li
-              key={item.href}
-              className={`
-                cursor-pointer transition duration-300
-                ${activeLink === item.href ? 'text-[#1658F9]' : 'text-black'}
-                hover:text-[#1658F9]
-              `}
-              onClick={() => {
-                setActiveLink(item.href);
-              }}
-            >
-              <a href={item.href}>{item.label}</a>
-            </li>
-          ))}
+          <li className='cursor-pointer hover:text-[#1658F9]'>
+            <Link to="/" onClick={handleMenuItemClick}>Home</Link>  {/* Close menu on click */}
+          </li>
+          <li className='cursor-pointer hover:text-[#1658F9]'>
+            <Link to="harga" smooth={true} duration={500} onClick={handleMenuItemClick}>Harga</Link>
+          </li>
+          <li className='cursor-pointer hover:text-[#1658F9]'>
+            <Link to="demo" smooth={true} duration={500} onClick={handleMenuItemClick}>Demo</Link>
+          </li>
+          <li className='cursor-pointer hover:text-[#1658F9]'>
+            <Link to="testimoni" smooth={true} duration={500} onClick={handleMenuItemClick}>Testimoni</Link>
+          </li>
+          <li className='cursor-pointer hover:text-[#1658F9]'>
+            <Link to="/faq" onClick={handleMenuItemClick}>FAQ</Link>  {/* Close menu on click */}
+          </li>
+          <li>Daftar</li>
+          <li>Masuk</li>
         </ul>
       </div>
 

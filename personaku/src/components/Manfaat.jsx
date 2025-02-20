@@ -4,7 +4,7 @@ import networking from '../assets/networking.png'
 
 const Manfaat = () => {
     return (
-        <section className="w-full md:h-[775px]">
+        <div id="manfaat" className="w-full md:h-[775px]">
             <div className="flex flex-col md:flex-row items-center justify-between">
                 {/* Left Side */}
                 <div className="w-full md:w-1/2 px-5 md:pl-[128px] pt-[50px] md:pt-[51px] text-center md:text-left">
@@ -51,7 +51,7 @@ const Manfaat = () => {
                     <img src={networking} alt="Networking" className="w-[554px] h-auto" />
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

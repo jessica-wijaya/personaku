@@ -5,7 +5,7 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 
 const Harga = () => {
   return (
-    <div className='w-full py-[100px] px-4 bg-white'>
+    <div id="harga" className='w-full pt-[75px] pb-[30px] px-4 bg-white'>
         <div className='flex flex-col items-center justify-center'>
             <p className='text-[#828282] text-lg'>HARGA</p>
             <h2 className='text-[32px] text-black poppins-semibold'>Pilih Paket Mu!</h2>
@@ -41,7 +41,7 @@ const Harga = () => {
 
         {/* Card 2 */}
             <div className='w-full shadow-xl flex flex-col items-center md:items-start p-4 my-8 md:my-0 rounded-lg hover:scale-105 duration-300 relative'>
-                <div className='absolute top-10 right-4 z-100'>
+                <div className='absolute top-4 right-4 z-100'>
                     <p className="w-[105px] h-[31px] bg-[#bfd2ff] rounded-xl text-xs text-[#1658f9] 
                                     flex justify-center items-center">
                     • Paling Laris

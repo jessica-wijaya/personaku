@@ -5,6 +5,7 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { FaChevronLeft, FaChevronRight, FaStar } from 'react-icons/fa6';
 import { testimonialData } from './TestimonialData';
+import Button from './Button';
 
 const Testimonial = () => {
 
@@ -36,7 +37,7 @@ const Testimonial = () => {
     }
 
     return (
-        <div className='w-full h-full space-y-2 relative lg:px-24 md:px-16 sm:px-7 px-4 flex items-center justify-center flex-col pb-[100px]'>
+        <div id="testimoni" className='w-full h-200 space-y-2 relative lg:px-24 md:px-16 sm:px-7 px-4 flex items-center justify-center flex-col my-[75px]'>
                 <p className='text-[#828282] text-lg'>Testimonial</p>
                 <h2 className="text-[32px] text-black poppins-semibold">
                 Dipercaya oleh 1000+ dosen
@@ -108,7 +109,9 @@ const Testimonial = () => {
                     ))}
                 </Swiper>
             </div>
-
+            <h2 className='text-[32px] text-black poppins-semibold mt-20'>Mulai buat portfolio yang memikat sekarang!</h2>
+            <p className='text-[#828282] text-lg'>Bangun bersama <span className="text-[#1658f9]">Personaku</span> untuk membuat portfolio anda</p>
+            <Button variant='primary' className='mt-5'>Langganan Sekarang!</Button>
         </div>
     )
 }

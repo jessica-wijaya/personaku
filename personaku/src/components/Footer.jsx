@@ -10,7 +10,7 @@ const Footer = () => {
                     <li className="hover:text-[#1658F9] cursor-pointer transition duration-300">FAQ</li>
                     <li className="hover:text-[rgb(22,88,249)] cursor-pointer transition duration-300">Demo</li>
                 </ul>
-                <p>2025 © Personaku. All rights reserved. Crafted by Personaku</p>
+                <p className='text-center'>2025 © Personaku. All rights reserved. Crafted by Personaku</p>
                 <img src={Logo} className='w-[150px] h-auto mt-1' />
             </div>
         </div>

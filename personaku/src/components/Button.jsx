@@ -18,26 +18,29 @@ const ButtonComponent = styled.button`
 
     /* Dynamic width & height based on size prop */
     width: ${props => 
+        props.size === "mobile" ? "75px" :
         props.size === "navbar" ? "82px" :
         props.size === "hero" ? "174px" :
         props.size === "lg" ? "230px" :
-        "305"};  /* Default to '305px' size */
+        props.size === "300" ? "300px":
+        "300"};  /* Default to '300px' size */
 
     height: ${props => 
+        props.size === "mobile" ? "38px" :
         props.size === "navbar" ? "38px" :
         props.size === "hero" ? "60px" :
         props.size === "lg" ? "70px" :
         "60px"};  /* Default to 'md' size */
 
     padding: ${props =>
-        props.size === "sm" ? "4px 8px" :
-        props.size === "md" ? "5px 9px" :
+        props.size === "navbar" ? "4px 8px" :
+        props.size === "hero" ? "5px 9px" :
         props.size === "lg" ? "6px 12px" :
         "5px 9px"};  /* Default padding */
 
     font-size: ${props =>
-        props.size === "sm" ? "14px" :
-        props.size === "md" ? "16px" :
+        props.size === "navbar" ? "14px" :
+        props.size === "hero" ? "16px" :
         props.size === "lg" ? "18px" :
         "16px"};  /* Default font size */
 
