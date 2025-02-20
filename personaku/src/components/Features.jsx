@@ -18,7 +18,7 @@ const Features = () => {
           <h1 className="poppins-semibold text-[32px]">
             Membangun Kualitas <br /> Personal Branding.
           </h1>
-          <Button variant="secondary" size="md" className="mt-4 md:mt-0">
+          <Button variant="secondary" size="hero" className="mt-4 md:mt-0">
             Contact Us
           </Button>
         </div>
