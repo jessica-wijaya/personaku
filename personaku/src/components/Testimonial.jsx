@@ -109,7 +109,7 @@ const Testimonial = () => {
                     ))}
                 </Swiper>
             </div>
-            <h2 className='text-[32px] text-black poppins-semibold mt-20'>Mulai buat portfolio yang memikat sekarang!</h2>
+            <h2 className='text-center text-[32px] text-black poppins-semibold mt-20'>Mulai buat portfolio yang memikat sekarang!</h2>
             <p className='text-[#828282] text-lg'>Bangun bersama <span className="text-[#1658f9]">Personaku</span> untuk membuat portfolio anda</p>
             <Button variant='primary' className='mt-5'>Langganan Sekarang!</Button>
         </div>

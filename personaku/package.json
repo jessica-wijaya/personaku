@@ -1,6 +1,5 @@
 {
   "name": "personaku",
-  "homepage": "https://jessica-wijaya.github.io/personaku/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
