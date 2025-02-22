@@ -29,7 +29,7 @@ const Hero = () => {
             Coba Gratis
             <AiOutlineArrowRight />
           </Button>
-          <RouterLink to="/contact">
+          <RouterLink to="/personaku/contact">
             <Button variant="secondary" size="hero">
               Contact Us
             </Button>

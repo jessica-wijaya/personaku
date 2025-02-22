@@ -20,7 +20,7 @@ const App = () => {
 
         {/* Main page content */}
         <Routes>
-          <Route path="/personaku/home" element={
+          <Route path="/personaku/" element={
             <div>
               <Hero />
               <Video />

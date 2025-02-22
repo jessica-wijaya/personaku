@@ -7,10 +7,10 @@ const Footer = () => {
         <div className='w-full border-t border-t-[#828282]'>
             <div className="flex flex-col items-center gap-4 my-5">
                 <ul className="flex space-x-6">
-                    <RouterLink to="/contact">
+                    <RouterLink to="/personaku/contact">
                         <li className="hover:text-[#1658F9] cursor-pointer transition duration-300">Kontak</li>
                     </RouterLink>
-                    <RouterLink to="/faq">
+                    <RouterLink to="/personaku/faq">
                         <li className="hover:text-[#1658F9] cursor-pointer transition duration-300">FAQ</li>
                     </RouterLink>
                     <li className="hover:text-[rgb(22,88,249)] cursor-pointer transition duration-300">Demo</li>
