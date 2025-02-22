@@ -31,19 +31,19 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-6">
         <li className='cursor-pointer hover:text-[#1658F9]'>
-          <RouterLink to="/" smooth={true} duration={500} onClick={handleMenuItemClick}>Home</RouterLink>
+          <RouterLink to="/personaku" smooth={true} duration={500} onClick={handleMenuItemClick}>Home</RouterLink>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
-          <HashLink smooth to="/#harga" duration={500} onClick={handleMenuItemClick}>Harga</HashLink>
+          <HashLink smooth to="/personaku/#harga" duration={500} onClick={handleMenuItemClick}>Harga</HashLink>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
           <Link to="demo" smooth={true} duration={500} onClick={handleMenuItemClick}>Demo</Link>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
-          <HashLink smooth to="/#testimoni" duration={500} onClick={handleMenuItemClick}>Testimoni</HashLink>
+          <HashLink smooth to="/personaku/#testimoni" duration={500} onClick={handleMenuItemClick}>Testimoni</HashLink>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
-          <RouterLink to="/faq" smooth={true} duration={500} onClick={handleMenuItemClick}>FAQ</RouterLink>
+          <RouterLink to="/personaku/faq" smooth={true} duration={500} onClick={handleMenuItemClick}>FAQ</RouterLink>
         </li>
       </ul>
 

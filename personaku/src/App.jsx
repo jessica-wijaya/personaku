@@ -20,7 +20,7 @@ const App = () => {
 
         {/* Main page content */}
         <Routes>
-          <Route path="/" element={
+          <Route path="/personaku/" element={
             <div>
               <Hero />
               <Video />
@@ -32,8 +32,8 @@ const App = () => {
             </div>
           } />
 
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/personaku/faq" element={<FAQ />} />
+          <Route path="/personaku/contact" element={<Contact />} />
         </Routes>
 
         <Footer />
