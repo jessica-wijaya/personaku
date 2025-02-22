@@ -18,9 +18,11 @@ const Features = () => {
           <h1 className="poppins-semibold text-[32px]">
             Membangun Kualitas <br /> Personal Branding.
           </h1>
-          <Button variant="secondary" size="hero" className="mt-4 md:mt-0">
-            Contact Us
-          </Button>
+          <RouterLink to="/personaku/contact">
+            <Button variant="secondary" size="hero" className="mt-4 md:mt-0">
+              Contact Us
+            </Button>
+          </RouterLink>
         </div>
       </div>
 
@@ -29,7 +31,7 @@ const Features = () => {
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[62px] items-center">
           {/* Card 1 */}
           <div className="group relative w-full md:max-w-[350px] h-full md:h-[425px] bg-white rounded-[14px] border border-[#828282] shadow-xl hover:scale-105 duration-300 px-6 pb-6">
-            <AiOutlineFund className='w-[45px] h-auto pt-5 group-hover:text-[#1658f9]'/>
+            <AiOutlineFund className='w-[45px] h-auto pt-5 group-hover:text-[#1658f9]' />
             <div className="flex flex-col gap-2.5 py-6 lg:py-20">
               <p className="poppins-medium text-[16px] group-hover:text-[#1658f9]">
                 Template Menarik
@@ -46,7 +48,7 @@ const Features = () => {
           </div>
           {/* Card 2 */}
           <div className="group relative w-full md:max-w-[350px] h-full md:h-[425px] bg-white rounded-[14px] border border-[#828282] shadow-xl hover:scale-105 duration-300 px-6 pb-6">
-            <AiOutlineUsergroupAdd className='w-[45px] h-auto pt-5 group-hover:text-[#1658f9]'/>
+            <AiOutlineUsergroupAdd className='w-[45px] h-auto pt-5 group-hover:text-[#1658f9]' />
             <div className="flex flex-col gap-2.5 py-6 lg:py-20">
               <p className="poppins-medium text-[16px] group-hover:text-[#1658f9]">
                 Template Menarik
@@ -62,7 +64,7 @@ const Features = () => {
           </div>
           {/* Card 3 */}
           <div className="group relative w-full md:max-w-[350px] h-full md:h-[425px] bg-white rounded-[14px] border border-[#828282] shadow-xl hover:scale-105 duration-300 px-6 pb-6">
-          <AiOutlineGlobal className='w-[45px] h-auto pt-5 group-hover:text-[#1658f9]'/>
+            <AiOutlineGlobal className='w-[45px] h-auto pt-5 group-hover:text-[#1658f9]' />
             <div className="flex flex-col gap-2.5 py-6 lg:py-20">
               <p className="poppins-medium text-[16px] group-hover:text-[#1658f9]">
                 Template Menarik
@@ -78,7 +80,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

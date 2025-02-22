@@ -60,19 +60,19 @@ const Navbar = () => {
         <img className="h-[60px] p-5" src={logo} alt="logo" />
         <ul className="space-y-5 text-lg pl-5 my-4">
           <li className='cursor-pointer hover:text-[#1658F9]'>
-            <RouterLink to="/" onClick={handleMenuItemClick}>Home</RouterLink>
+            <RouterLink to="/personaku/" smooth={true} duration={500} onClick={handleMenuItemClick}>Home</RouterLink>
           </li>
           <li className='cursor-pointer hover:text-[#1658F9]'>
-            <HashLink to="/#harga" smooth={true} duration={500} onClick={handleMenuItemClick}>Harga</HashLink>
+            <HashLink smooth to="/personaku/#harga" duration={500} onClick={handleMenuItemClick}>Harga</HashLink>
           </li>
           <li className='cursor-pointer hover:text-[#1658F9]'>
             <Link to="demo" smooth={true} duration={500} onClick={handleMenuItemClick}>Demo</Link>
           </li>
           <li className='cursor-pointer hover:text-[#1658F9]'>
-            <HashLink to="/#testimoni" smooth={true} duration={500} onClick={handleMenuItemClick}>Testimoni</HashLink>
+            <HashLink smooth to="/personaku/#testimoni" duration={500} onClick={handleMenuItemClick}>Testimoni</HashLink>
           </li>
           <li className='cursor-pointer hover:text-[#1658F9]'>
-            <RouterLink to="/faq" onClick={handleMenuItemClick}>FAQ</RouterLink>
+            <RouterLink to="/personaku/faq" smooth={true} duration={500} onClick={handleMenuItemClick}>FAQ</RouterLink>
           </li>
           <li>Daftar</li>
           <li>Masuk</li>

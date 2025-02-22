@@ -8,7 +8,7 @@ const Contact = () => {
             <div className='flex flex-col lg:flex-row justify-center lg:justify-between items-start gap-8'>
                 {/* Left Section: Contact form and description */}
                 <div className='flex flex-col justify-center items-start min-h-100 mx-auto'>
-                    <div className='w-[400px] lg:w-[600px]'>
+                    <div className='w-[350px] lg:w-[600px]'>
                         <h1 className='poppins-bold text-[30px] text-left'>Get in touch!</h1>
                         <p>
                             Apabila Anda memiliki pertanyaan, memerlukan bantuan, atau ingin mendapatkan informasi lebih lanjut mengenai layanan dan produk kami,
