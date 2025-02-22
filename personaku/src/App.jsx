@@ -10,14 +10,15 @@ import Harga from './components/Harga'
 import Footer from './components/Footer'
 import Testimonial from './components/Testimonial'
 import FAQ from './components/FAQ'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
     <Router>
       <div>
         <Navbar />
-        
-        {/* Define main page content */}
+
+        {/* Main page content */}
         <Routes>
           <Route path="/" element={
             <div>
@@ -32,6 +33,7 @@ const App = () => {
           } />
 
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <Footer />

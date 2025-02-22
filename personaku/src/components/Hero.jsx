@@ -5,6 +5,7 @@ import umy from '../assets/umy.png';
 import unimugo from '../assets/unimugo.png';
 import Button from './Button';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { Link as RouterLink } from 'react-router-dom';
 
 
 const Hero = () => {
@@ -12,7 +13,7 @@ const Hero = () => {
     <div id="hero" className="w-full max-w-[1440px] h-[500px] mx-[auto] px-5 md:px-10">
       {/* Headline & Subheading */}
       <div className="max-w-[1055px] mt-10 md:mt-[93px] text-center md:text-left">
-        <h1 className="poppins-bold text-3xl md:text-5xl leading-tight">
+        <h1 className="poppins-bold text-3xl md:text-5xl">
           Membangun jalinan <br /> komunitas penelitian
         </h1>
         <h2 className="poppins-regular text-[#828282] md:text-2xl mt-[44px]">
@@ -28,7 +29,11 @@ const Hero = () => {
             Coba Gratis
             <AiOutlineArrowRight />
           </Button>
-          <Button variant="secondary" size="hero">Contact Us</Button>
+          <RouterLink to="/contact">
+            <Button variant="secondary" size="hero">
+              Contact Us
+            </Button>
+          </RouterLink>
         </div>
 
         {/* Logos Section */}

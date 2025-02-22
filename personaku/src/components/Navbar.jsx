@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import { HashLink } from 'react-router-hash-link';
+import { Link as RouterLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Button from './Button';
@@ -29,19 +31,19 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-6">
         <li className='cursor-pointer hover:text-[#1658F9]'>
-          <Link to="/" smooth={true} duration={500} onClick={handleMenuItemClick}>Home</Link>  {/* Close menu on click */}
+          <RouterLink to="/" smooth={true} duration={500} onClick={handleMenuItemClick}>Home</RouterLink>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
-          <Link to="harga" smooth={true} duration={500} onClick={handleMenuItemClick}>Harga</Link>
+          <HashLink smooth to="/#harga" duration={500} onClick={handleMenuItemClick}>Harga</HashLink>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
           <Link to="demo" smooth={true} duration={500} onClick={handleMenuItemClick}>Demo</Link>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
-          <Link to="testimoni" smooth={true} duration={500} onClick={handleMenuItemClick}>Testimoni</Link>
+          <HashLink smooth to="/#testimoni" duration={500} onClick={handleMenuItemClick}>Testimoni</HashLink>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
-          <Link to="faq" smooth={true} duration={500} onClick={handleMenuItemClick}>FAQ</Link>  {/* Close menu on click */}
+          <RouterLink to="/faq" smooth={true} duration={500} onClick={handleMenuItemClick}>FAQ</RouterLink>
         </li>
       </ul>
 
@@ -52,26 +54,25 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`fixed top-0 left-0 w-1/2 h-full bg-white z-50 transition-transform ${
-          nav ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed top-0 left-0 w-1/2 h-full bg-white z-50 transition-transform ${nav ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         <img className="h-[60px] p-5" src={logo} alt="logo" />
         <ul className="space-y-5 text-lg pl-5 my-4">
           <li className='cursor-pointer hover:text-[#1658F9]'>
-            <Link to="/" onClick={handleMenuItemClick}>Home</Link>  {/* Close menu on click */}
+            <RouterLink to="/" onClick={handleMenuItemClick}>Home</RouterLink>
           </li>
           <li className='cursor-pointer hover:text-[#1658F9]'>
-            <Link to="harga" smooth={true} duration={500} onClick={handleMenuItemClick}>Harga</Link>
+            <HashLink to="/#harga" smooth={true} duration={500} onClick={handleMenuItemClick}>Harga</HashLink>
           </li>
           <li className='cursor-pointer hover:text-[#1658F9]'>
             <Link to="demo" smooth={true} duration={500} onClick={handleMenuItemClick}>Demo</Link>
           </li>
           <li className='cursor-pointer hover:text-[#1658F9]'>
-            <Link to="testimoni" smooth={true} duration={500} onClick={handleMenuItemClick}>Testimoni</Link>
+            <HashLink to="/#testimoni" smooth={true} duration={500} onClick={handleMenuItemClick}>Testimoni</HashLink>
           </li>
           <li className='cursor-pointer hover:text-[#1658F9]'>
-            <Link to="/faq" onClick={handleMenuItemClick}>FAQ</Link>  {/* Close menu on click */}
+            <RouterLink to="/faq" onClick={handleMenuItemClick}>FAQ</RouterLink>
           </li>
           <li>Daftar</li>
           <li>Masuk</li>
