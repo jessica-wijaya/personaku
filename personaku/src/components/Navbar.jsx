@@ -31,7 +31,7 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-6">
         <li className='cursor-pointer hover:text-[#1658F9]'>
-          <RouterLink to="/personaku" smooth={true} duration={500} onClick={handleMenuItemClick}>Home</RouterLink>
+          <RouterLink to="/personaku/" smooth={true} duration={500} onClick={handleMenuItemClick}>Home</RouterLink>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
           <HashLink smooth to="/personaku/#harga" duration={500} onClick={handleMenuItemClick}>Harga</HashLink>
