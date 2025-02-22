@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import FlipCard from './Flipcard';
+import FlipCard from './FlipCard';
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
 const Harga = () => {
