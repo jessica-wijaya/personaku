@@ -77,7 +77,7 @@ const Testimonial = () => {
                     {testimonialData.map((item) => (
                         <SwiperSlide key={item.id}>
 
-                            <div className="w-full h-[200px] p-6 space-y-10 group rounded-xl border border-[#828282]">
+                            <div className="w-full h-[200px] p-6 space-y-10 group rounded-xl border border-[#DEE8FF]">
                                 <p className="text-black text-base font-normal">
                                     {item.desc}
                                 </p>

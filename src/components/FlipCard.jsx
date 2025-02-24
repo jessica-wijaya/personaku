@@ -8,7 +8,7 @@ const FlipCard = ({ frontContent, backContent }) => {
     return (
         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
             {/* Front Side */}
-            <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 h-[450px] lg:h-[550px]">
+            <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-[14px] hover:scale-105 duration-300 h-[450px] lg:h-[550px] border border-[#DEE8FF]">
                 <div className="flex-grow">
                     {frontContent}
                 </div>
@@ -21,7 +21,7 @@ const FlipCard = ({ frontContent, backContent }) => {
             </div>
 
             {/* Back Side */}
-            <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 h-[450px] lg:h-[550px]">
+            <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-[14px] hover:scale-105 duration-300 h-[450px] lg:h-[550px] border border-[#DEE8FF]">
                 <div className="flex-grow">
                     {backContent}
                 </div>

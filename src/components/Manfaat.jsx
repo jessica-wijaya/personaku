@@ -16,28 +16,28 @@ const Manfaat = () => {
                     </h2>
                     {/* Rectangles */}
                     <div className="w-full md:w-[556px] grid grid-cols-1 md:grid-cols-2 md:gap-[45px] gap-y-[20px] items-center mt-8">
-                        <div className="w-full md:w-[271px] h-44 bg-white rounded-[14px] border-2 border-[#d9d9d9] flex flex-col gap-2.5 py-[21px] px-6 mx-auto">
+                        <div className="w-full md:w-[271px] h-44 bg-white rounded-[14px] border-2 border-[#DEE8FF] flex flex-col gap-2.5 py-[21px] px-6 mx-auto hover:scale-105 duration-300">
                             <AiOutlineMail size={48} className="rounded-[18px] text-[#1658f9]" />
                             <p className="poppins-regular text-lg">Jaringan Dosen</p>
                             <p className="poppins-regular text-sm">
                                 We use a customized application to be specifically designed
                             </p>
                         </div>
-                        <div className="w-full md:w-[271px] h-44 bg-white rounded-[14px] border-2 border-[#d9d9d9] flex flex-col gap-2.5 py-[21px] px-6 mx-auto">
+                        <div className="w-full md:w-[271px] h-44 bg-white rounded-[14px] border-2 border-[#DEE8FF] flex flex-col gap-2.5 py-[21px] px-6 mx-auto hover:scale-105 duration-300">
                             <AiOutlineMail size={48} className="rounded-[18px] text-[#1658f9]" />
                             <p className="poppins-regular text-lg">Jaringan Dosen</p>
                             <p className="poppins-regular text-sm">
                                 We use a customized application to be specifically designed
                             </p>
                         </div>
-                        <div className="w-full md:w-[271px] h-44 bg-white rounded-[14px] border-2 border-[#d9d9d9] flex flex-col gap-2.5 py-[21px] px-6 mx-auto">
+                        <div className="w-full md:w-[271px] h-44 bg-white rounded-[14px] border-2 border-[#DEE8FF] flex flex-col gap-2.5 py-[21px] px-6 mx-auto hover:scale-105 duration-300">
                             <AiOutlineMail size={48} className="rounded-[18px] text-[#1658f9]" />
                             <p className="poppins-regular text-lg">Jaringan Dosen</p>
                             <p className="poppins-regular text-sm">
                                 We use a customized application to be specifically designed
                             </p>
                         </div>
-                        <div className="w-full md:w-[271px] h-44 bg-white rounded-[14px] border-2 border-[#d9d9d9] flex flex-col gap-2.5 py-[21px] px-6 mx-auto">
+                        <div className="w-full md:w-[271px] h-44 bg-white rounded-[14px] border-2 border-[#DEE8FF] flex flex-col gap-2.5 py-[21px] px-6 mx-auto hover:scale-105 duration-300">
                             <AiOutlineMail size={48} className="rounded-[18px] text-[#1658f9]" />
                             <p className="poppins-regular text-lg">Jaringan Dosen</p>
                             <p className="poppins-regular text-sm">

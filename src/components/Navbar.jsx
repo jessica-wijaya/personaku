@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between h-[87px] px-5 md:px-10 border-b border-[#828282]">
+    <nav className="flex items-center justify-between h-[87px] px-5 md:px-10 border-b border-[#DEE8FF]">
       {/* Logo */}
       <img
         className="h-[90px] p-[27px_2px_36.254px_10px] ml-[5px] mt-[15px] flex-shrink-0"
@@ -37,7 +37,7 @@ const Navbar = () => {
           <HashLink smooth to="/personaku/#harga" duration={500} onClick={handleMenuItemClick}>Harga</HashLink>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
-          <Link to="demo" smooth={true} duration={500} onClick={handleMenuItemClick}>Demo</Link>
+          <Link to="/personaku/#demo" smooth={true} duration={500} onClick={handleMenuItemClick}>Demo</Link>
         </li>
         <li className='cursor-pointer hover:text-[#1658F9]'>
           <HashLink smooth to="/personaku/#testimoni" duration={500} onClick={handleMenuItemClick}>Testimoni</HashLink>

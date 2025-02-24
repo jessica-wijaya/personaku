@@ -17,51 +17,50 @@ const ButtonComponent = styled.button`
     transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
 
     /* Dynamic width & height based on size prop */
-    width: ${props => 
+    width: ${props =>
         props.size === "mobile" ? "75px" :
-        props.size === "navbar" ? "82px" :
-        props.size === "hero" ? "174px" :
-        props.size === "lg" ? "230px" :
-        props.size === "300" ? "300px":
-        "300"};  /* Default to '300px' size */
+            props.size === "navbar" ? "82px" :
+                props.size === "hero" ? "174px" :
+                    props.size === "lg" ? "230px" :
+                        props.size === "300" ? "300px" :
+                            "300"};  /* Default to '300px' size */
 
-    height: ${props => 
+    height: ${props =>
         props.size === "mobile" ? "38px" :
-        props.size === "navbar" ? "38px" :
-        props.size === "hero" ? "60px" :
-        props.size === "lg" ? "70px" :
-        "60px"};  /* Default to 'md' size */
+            props.size === "navbar" ? "38px" :
+                props.size === "hero" ? "60px" :
+                    props.size === "lg" ? "70px" :
+                        "60px"};  /* Default to 'md' size */
 
     padding: ${props =>
         props.size === "navbar" ? "4px 8px" :
-        props.size === "hero" ? "5px 9px" :
-        props.size === "lg" ? "6px 12px" :
-        "5px 9px"};  /* Default padding */
+            props.size === "hero" ? "5px 9px" :
+                props.size === "lg" ? "6px 12px" :
+                    "5px 9px"};  /* Default padding */
 
     font-size: ${props =>
         props.size === "navbar" ? "14px" :
-        props.size === "hero" ? "16px" :
-        props.size === "lg" ? "18px" :
-        "16px"};  /* Default font size */
+            props.size === "hero" ? "16px" :
+                props.size === "lg" ? "18px" :
+                    "16px"};  /* Default font size */
 
     background-color: ${props =>
         props.variant === "primary" ? "#1658F9" :
-        props.variant === "secondary" ? "#FFFFFF" : "#FFFFFF"};
+            props.variant === "secondary" ? "#bfd2ff" : "#bfd2ff"};
 
     color: ${props =>
         props.variant === "primary" ? "#FFFFFF" :
-        props.variant === "secondary" ? "#1658F9" : "#1658F9"};
+            props.variant === "secondary" ? "#1658F9" : "#1658F9"};
 
-    border: ${props =>
-        props.variant === "secondary" ? "1px solid #828282" : "none"};
+   
 
     &:hover {
         background-color: ${props =>
-            props.variant === "primary" ? "#0F4AD0" :  
+        props.variant === "primary" ? "#0F4AD0" :
             props.variant === "secondary" ? "#E6EEFF" : "#E6EEFF"};
 
         border-color: ${props =>
-            props.variant === "secondary" ? "#0F4AD0" : "none"};
+        props.variant === "secondary" ? "#0F4AD0" : "none"};
 
         transform: scale(1.03);
     }

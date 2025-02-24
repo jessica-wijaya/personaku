@@ -101,7 +101,7 @@ const Harga = () => {
                             <p className="mx-8 poppins-medium text-[#828282] text-[10px]">
                                 Semua yang ada di basic, ditambah:
                             </p>
-                            <div className="m-[13px] mx-8">
+                            <div className="m-[13px] mx-8 flex flex-col gap-2">
                                 <div className="flex items-center gap-[10px]">
                                     <AiOutlineCheckCircle className="w-6 h-6 text-[#bfd2ff]" />
                                     <p>Fitur 1</p>
@@ -164,7 +164,7 @@ const Harga = () => {
                             <p className="mx-8 poppins-medium text-[#828282] text-[10px]">
                                 Semua yang ada di basic, ditambah:
                             </p>
-                            <div className="m-[13px] mx-8">
+                            <div className="m-[13px] mx-8 flex flex-col gap-2">
                                 <div className="flex items-center gap-[10px]">
                                     <AiOutlineCheckCircle className="w-6 h-6 text-[#bfd2ff]" />
                                     <p>Fitur 1</p>

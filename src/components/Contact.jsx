@@ -20,7 +20,7 @@ const Contact = () => {
                             <label>Full Name</label>
                             <input
                                 type="text"
-                                className="field w-full h-[50px] bg-transparent border-2 border-[#828282] rounded-[6px] py-[15px] px-[15px] mt-[8px]"
+                                className="field w-full h-[50px] bg-transparent border-1 border-[#D9D9D9] rounded-[6px] py-[15px] px-[15px] mt-[8px]"
                                 placeholder='Enter your name'
                                 required
                             />
@@ -29,7 +29,7 @@ const Contact = () => {
                             <label>Email Address</label>
                             <input
                                 type="email"
-                                className="field w-full h-[50px] bg-transparent border-2 border-[#828282] rounded-[6px] py-[15px] px-[15px] mt-[8px]"
+                                className="field w-full h-[50px] bg-transparent border-1 border-[#D9D9D9] rounded-[6px] py-[15px] px-[15px] mt-[8px]"
                                 placeholder='Enter your email'
                                 required
                             />
@@ -39,7 +39,7 @@ const Contact = () => {
                             <textarea
                                 name=""
                                 id=""
-                                className="w-full h-[200px] resize-none bg-transparent border-2 border-[#828282] rounded-[6px] py-[15px] px-[15px] mt-[8px]"
+                                className="w-full h-[200px] resize-none bg-transparent border-1 border-[#D9D9D9] rounded-[6px] py-[15px] px-[15px] mt-[8px]"
                                 placeholder='Enter your message'
                                 required
                             ></textarea>
@@ -56,6 +56,7 @@ const Contact = () => {
                     <p className='mt-4'>Instagram: <span className='font-medium'>@yourinstagram</span></p>
                     <p className='mt-2'>Email: <span className='font-medium'>example@example.com</span></p>
                     <p className='mt-2'>Phone: <span className='font-medium'>+62 123 4567</span></p>
+                    <p className='mt-2'>WhatsApp: <span className='font-medium'>+62 123 4567</span></p>
                 </div>
             </div>
         </div>

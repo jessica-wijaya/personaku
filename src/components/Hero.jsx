@@ -10,13 +10,13 @@ import { Link as RouterLink } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div id="hero" className="w-full max-w-[1440px] h-[500px] mx-[auto] px-5 md:px-10">
+    <div id="hero" className="w-full max-w-[1440px] h-[500px] mx-[auto] px-5 md:px-35">
       {/* Headline & Subheading */}
       <div className="max-w-[1055px] mt-10 md:mt-[93px] text-center md:text-left">
-        <h1 className="poppins-bold text-3xl md:text-5xl">
+        <h1 className="poppins-bold text-3xl md:text-6xl leading-snug">
           Membangun jalinan <br /> komunitas penelitian
         </h1>
-        <h2 className="poppins-regular text-[#828282] md:text-2xl mt-[44px]">
+        <h2 className="poppins-regular text-[#828282] md:text-2xl mt-[25px] leading-snug">
           Selamat datang di jaringan komunitas akademik, tempat untuk mempererat <br />
           kerjasama dalam menjalankan Tri Dharma Perguruan Tinggi di seluruh Indonesia.
         </h2>
@@ -25,12 +25,12 @@ const Hero = () => {
       <div className="mt-[55px] flex flex-col md:flex-row items-center justify-between">
         {/* Buttons Section */}
         <div className="flex flex-col md:flex-row gap-4">
-          <Button variant="primary" size="hero" className="gap-2">
+          <Button variant="secondary" size="hero" className="gap-2">
             Coba Gratis
             <AiOutlineArrowRight />
           </Button>
           <RouterLink to="/personaku/contact">
-            <Button variant="secondary" size="hero">
+            <Button variant="primary" size="hero">
               Contact Us
             </Button>
           </RouterLink>
