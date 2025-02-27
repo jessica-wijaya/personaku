@@ -42,7 +42,7 @@ const Features = () => {
               </p>
             </div>
             {/* Button positioned at the bottom (28px from bottom) on desktop */}
-            <button className="w-[30px] lg:w-[45px] h-[30px] lg:h-[45px] rounded-full border border-[#828282] flex items-center justify-center cursor-pointer group-hover:text-[#1658f9] hover:bg-[#1658f9] hover:text-white duration-300
+            <button className="w-[30px] lg:w-[45px] h-[30px] lg:h-[45px] bg-[#bfd2ff] text-[#1658f9] rounded-full border border-[#DEE8FF] flex items-center justify-center cursor-pointer group-hover:text-[#1658f9] hover:bg-[#1658f9] hover:text-white duration-300
                                md:absolute md:bottom-[28px] md:left-[38px]">
               <AiOutlineArrowRight className="rotate-[315deg] text-current" />
             </button>
@@ -58,7 +58,7 @@ const Features = () => {
                 Pilih dari berbagai template portofolio yang elegan dan responsif sesuai dengan gaya dan kebutuhan Anda.
               </p>
             </div>
-            <button className="w-[30px] lg:w-[45px] h-[30px] lg:h-[45px] rounded-full border border-[#828282] flex items-center justify-center cursor-pointer group-hover:text-[#1658f9] hover:bg-[#1658f9] hover:text-white duration-300
+            <button className="w-[30px] lg:w-[45px] h-[30px] lg:h-[45px] bg-[#bfd2ff] text-[#1658f9] rounded-full border border-[#DEE8FF] flex items-center justify-center cursor-pointer group-hover:text-[#1658f9] hover:bg-[#1658f9] hover:text-white duration-300
                                md:absolute md:bottom-[28px] md:left-[38px]">
               <AiOutlineArrowRight className="rotate-[315deg] text-current" />
             </button>
