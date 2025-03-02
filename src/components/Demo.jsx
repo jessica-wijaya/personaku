@@ -19,7 +19,7 @@ const Demo = () => {
       return "bg-[#1658f9] transition-colors duration-1000 ease-in-out";
     } else if (stepOrder[clicked] + 1 === stepOrder[step]) {
       // next step
-      return "border border-[#1658f9] transition-colors duration-1500 ease-in-out";
+      return "border border-[#1658f9] transition-colors duration-1500 ease-in-out animate-pulse";
     }
     return "border border-[#d9d9d9] transition-colors duration-1000 ease-in-out";
   };

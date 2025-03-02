@@ -10,24 +10,22 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const lastScrollY = useRef(0);
 
-  // Toggle mobile menu
   const handleNav = () => {
     setNav(!nav);
   };
 
-  // Close mobile menu on menu item click
   const handleMenuItemClick = () => {
     setNav(false);
   };
 
-  // Listen for scroll events to show/hide navbar
+  // show/hide navbar
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY < lastScrollY.current) {
-        // Scrolling up: show navbar
+        // scroll up: show navbar
         setShowNavbar(true);
       } else {
-        // Scrolling down: hide navbar
+        // scroll down: hide navbar
         setShowNavbar(false);
       }
       lastScrollY.current = window.scrollY;
@@ -150,7 +148,9 @@ const Navbar = () => {
       {/* Buttons (Desktop Only) */}
       <div className="hidden md:flex space-x-4 mr-[5px]">
         <Button variant="secondary" size="navbar">
-          Daftar
+          <RouterLink to="/personaku/daftar" smooth={true} duration={500}>
+            Daftar
+          </RouterLink>
         </Button>
         <Button variant="primary" size="navbar">
           Masuk
