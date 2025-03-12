@@ -3,10 +3,8 @@ import Button from "./Button";
 
 const Contact = () => {
   return (
-    <div className="w-full h-auto px-5 md:px-10 py-25">
-      {/* Use flex-row on medium screens and above, and stack in a column on mobile */}
+    <div className="w-full h-auto px-5 md:px-10 py-15 mt-[87px]">
       <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-start gap-8">
-        {/* Left Section: Contact form and description */}
         <div className="flex flex-col justify-center items-start min-h-100 mx-auto">
           <div className="w-[350px] lg:w-[600px]">
             <h1 className="poppins-bold text-[30px] text-left">
