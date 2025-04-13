@@ -52,7 +52,7 @@ const Manfaat = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Manfaat

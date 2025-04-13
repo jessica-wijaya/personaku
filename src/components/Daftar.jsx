@@ -94,7 +94,7 @@ const Daftar = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white mt-[87px] py-5">
-      <div id="form-container" className="w-[800px] rounded-lg p-8 bg-white">
+      <div id="form-container" className="max-w-[800px] md:w-[800px] rounded-lg p-8 bg-white">
         {/* progress bar */}
         <div className="relative flex justify-between items-center mb-10">
           <div className="absolute w-full h-2 bg-[#D9D9D9] rounded-full top-5 transform -translate-y-1/2"></div>

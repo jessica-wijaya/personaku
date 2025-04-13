@@ -91,7 +91,9 @@ const Navbar = () => {
             </RouterLink>
           </Button>
           <Button variant="primary" size="navbar">
+            <RouterLink to="/personaku/masuk" smooth={true} duration={500}>
             Masuk
+            </RouterLink>
           </Button>
         </div>
 

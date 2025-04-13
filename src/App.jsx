@@ -13,6 +13,7 @@ import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Whatsapp from "./components/Whatsapp";
 import Daftar from "./components/Daftar";
+import Masuk from "./components/Masuk";
 
 const App = () => {
   return (
@@ -41,6 +42,8 @@ const App = () => {
           <Route path="/personaku/faq" element={<FAQ />} />
           <Route path="/personaku/contact" element={<Contact />} />
           <Route path="/personaku/daftar" element={<Daftar />} />
+          <Route path="/personaku/masuk" element={<Masuk />} />
+
         </Routes>
 
         <Footer />
