@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import FlipCard from "./FlipCard";
+import Button from "../../components/Button";
+import FlipCard from "../../components/FlipCard";
 
 import { AiOutlineCheckCircle } from "react-icons/ai";
 

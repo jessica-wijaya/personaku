@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import Button from "./Button";
+import Button from "../../components/Button";
 
 const faqData = [
   {

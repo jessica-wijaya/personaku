@@ -1,9 +1,9 @@
 import React from "react";
-import stikes from "../assets/stikes.png";
-import ukws from "../assets/ukws.png";
-import umy from "../assets/umy.png";
-import unimugo from "../assets/unimugo.png";
-import Button from "./Button";
+import stikes from "../../assets/stikes.png";
+import ukws from "../../assets/ukws.png";
+import umy from "../../assets/umy.png";
+import unimugo from "../../assets/unimugo.png";
+import Button from "../../components/Button";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link as RouterLink } from "react-router-dom";
 

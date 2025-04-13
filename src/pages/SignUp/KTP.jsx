@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ktpsample from "../assets/ktp.png";
-import pasporsample from "../assets/paspor.png";
+import ktpsample from "../../assets/ktp.png";
+import pasporsample from "../../assets/paspor.png";
 
 const KTP = ({ formData, setFormData, errors }) => {
   const [file, setFile] = useState(null);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import demo_1 from "../assets/demo_1.png";
-import demo_2 from "../assets/demo_2.png";
-import demo_3 from "../assets/demo_3.png";
+import demo_1 from "../../assets/demo_1.png";
+import demo_2 from "../../assets/demo_2.png";
+import demo_3 from "../../assets/demo_3.png";
 
 const Demo = () => {
   const [clicked, setClicked] = useState("b1");

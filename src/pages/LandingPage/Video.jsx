@@ -1,6 +1,6 @@
 import React from 'react';
 // Suppose your local video file is named `myVideo.mp4` in src/assets
-import myVideo from '../assets/demovideo.mp4';
+import myVideo from '../../assets/demovideo.mp4';
 
 const Video = () => {
   return (

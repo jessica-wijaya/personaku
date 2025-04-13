@@ -1,19 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Video from "./components/Video";
-import Features from "./components/Features";
-import Manfaat from "./components/Manfaat";
-import Demo from "./components/Demo";
-import Harga from "./components/Harga";
+import Hero from "./pages/LandingPage/Hero";
+import Video from "./pages/LandingPage/Video"
+import Features from "./pages/LandingPage/Features";
+import Manfaat from "./pages/LandingPage/Manfaat";
+import Demo from "./pages/LandingPage/Demo";
+import Harga from "./pages/LandingPage/Harga";
 import Footer from "./components/Footer";
-import Testimonial from "./components/Testimonial";
-import FAQ from "./components/FAQ";
-import Contact from "./components/Contact";
+import Testimonial from "./pages/LandingPage/Testimonial";
+import FAQ from "./pages/FAQ/FAQ";
+import Contact from "./pages/Contact/Contact";
 import Whatsapp from "./components/Whatsapp";
-import Daftar from "./components/Daftar";
-import Masuk from "./components/Masuk";
+import Daftar from "./pages/SignUp/Daftar";
+import Masuk from "./pages/SignUp/Masuk";
 
 const App = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import Button from '../../components/Button';
 import { Link as RouterLink } from 'react-router-dom';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { AiOutlineGlobal } from "react-icons/ai";

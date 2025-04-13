@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
-import networking from '../assets/networking.png'
+import networking from '../../assets/networking.png'
 
 const Manfaat = () => {
     return (

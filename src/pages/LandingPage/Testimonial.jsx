@@ -4,8 +4,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { FaChevronLeft, FaChevronRight, FaStar } from 'react-icons/fa6';
-import { testimonialData } from './TestimonialData';
-import Button from './Button';
+import { testimonialData } from '../../components/TestimonialData';
+import Button from '../../components/Button';
 
 const Testimonial = () => {
 
